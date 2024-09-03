@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>MY protfolio</title>
 
 </head>
+
 <body>
     <!-- Header here -->
-     <header>
+    <header>
         <nav class="navbar">
             <div>
                 <h1>fallow</h1>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+               
+            </div>
             <button class="header-btn">Consultation <i class="fa-solid fa-arrow-right"></i></button>
-        </nav>
-     </header>
+           <div class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-    <section>
+        </nav>
+    </header>
+<!-- about section here-->
+     <section> 
         <div class="about">
-            <img src="./images/img.png" alt="profile image" style="float:right">
-            <div><h1>👋Hey,I am<br>Muhammad Ali<br>web Developer</h1></div>
+            <img src="./images/img.png" alt="profile image" style="float:right" class="about-img">
+            <div class="H1-here"><h1>👋Hey,I am<br>Muhammad Ali<br>web Developer</h1></div>
             <div><p><h5>"Every line of code you write is a step towards<br> transforming ideasinto reality, making the web<br> a more dynamic and interactive place for everyone."</h5></p></div>
             <div><button>Hire me➡</button><a href="#"><i class='bx bx-play-circle'></i></a><span>watch into vedio</span></div>
             <div><h6>over 5000+client all over the world.</h6></div>
 
         </div>
     </section>
-    <section>
+    <!-- social-media section here -->
+      <section>
         <div class="social-media">
             <a href="https://stackoverflow.com"class="stackoverflow"><iclass="fab-stack-overflow"></i>s. overflow</a>
             <a href="https://github.com"class="github"><iclass="fabfa-github"></i> Github</a>
@@ -50,8 +64,9 @@
         </div>
 
     </section>
+    <!-- container section here -->
 
-    <section>
+       <section>
         <div class="container">
             <h1>Expertise <span class="highlight">Service!</span></h1>
             <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers. We've expert team to solve your problems.</p>
@@ -77,14 +92,15 @@
         </div>
 
     </section>
-    <section>
+    <!-- resume section here -->
+     <section>  
         
         <div class="resume-header">
             <img src="images/img.png" alt="Muhammad ali">
             <div>
-                <h1>Muhammad Ali</h1>
-                <p>web developer</p>
-                <p>Hi there! My name is Muhammad ali, and I’m a web develpoer.I just try to learn HTML,CSS and javascript.</p>
+                <h1 class="h1-here">Muhammad Ali</h1>
+                <p class="p-here">web developer</p>
+                <p class="p-here">Hi there! My name is Muhammad ali, and I’m a web develpoer.I just try to learn HTML,CSS and javascript.</p>
             </div>
         </div>
 
@@ -117,7 +133,6 @@
                 <span>JavaScript</span>
                 <span>Laravel</span>
                 <span>C++</span>
-                <span>Figma</span>
             </div>
         </div>
 
@@ -134,9 +149,8 @@
     </div>
 
     </section>
-
-
-    <section>
+    <!-- container class here -->
+    <section>  
         <div class="container">
             <div class="projects-header">
                 <h1>Let's Check my Projects</h1>
@@ -197,8 +211,8 @@
     
                
         
-
-    </section>
+     <!--new container section  -->
+     </section>         
        <div class="container-new">
            <h3>COUSTMER REVIEWS</h3>
            <h2 class="intro">what's our coustomer say </h2>
@@ -220,16 +234,17 @@
          </div>
             <div class="paragraph"><p>Take care of more then 100k coustomers</p></div>
             <div class="lgs">
-                <div>Google</div>
-                <div><i class="fa-brands fa-slack"></i>slack</div>
-                <div>Amazon</div>
-                <div><i class="fa-brands fa-spotify"></i>Spotify</div>
-                <div>linkedin<i class="fa-brands fa-linkedin"></i></div>
-                <div>Walmart</div>
+                <div class="google">Google</div>
+                <div class="slack"><i class="fa-brands fa-slack"></i>slack</div>
+                <div class="amazon">Amazon</div>
+                <div class="spotify"><i class="fa-brands fa-spotify"></i>Spotify</div>
+                <div class="linkedin"><i class="fa-brands fa-linkedin"></i>linkedin</div>
+                <div class="Walmart">Walmart</div>
             </div>
             <hr>    
       </div>
- </section>
+      <!-- news section here -->
+  </section>
        <section class="news-section">
               <h2 class="news-last">Stay up to date with <br>our news.</h2>
               
@@ -263,8 +278,8 @@
     </div>
      </section>
 
-
-     <section>
+     <!-- download section here -->
+      <section> 
         <div class="downloads-container">
         </div>
         <div class="downloads-container-text">
@@ -274,7 +289,7 @@
                 <button class="Download-button">Download CV</i></button>
             </div>
         </div>
-     </section>
+     </section> 
      <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
@@ -321,6 +336,6 @@
             <p> copyright&copy; 2023 – All Rights Reserved. Made by <a href="#">fallow</a></p>
         </div>
     </footer>
- 
+  
 </body>
 </html>

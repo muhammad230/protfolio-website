@@ -19,6 +19,13 @@ header {
   justify-content: space-around;
   height: 70px;
 }
+.menu-bar {
+  font-size: 35px;
+  display: none;
+  &:hover {
+    color: rgb(72, 218, 218);
+  }
+}
 
 .navbar h1 {
   color: #051026;
@@ -26,17 +33,16 @@ header {
 
 .navbar li {
   display: inline-block;
-  color:#051026;
+  color: #051026;
   margin: 0 20px;
-  
 }
 
 .navbar li a {
   text-decoration: none;
   color: #051026;
 
-  &:hover{
-    color: darkorchid;
+  &:hover {
+    color: rgb(49, 204, 204);
   }
 }
 
@@ -47,11 +53,19 @@ header {
   border-radius: 5px;
   padding: 10px 5px;
   cursor: pointer;
+  &:hover {
+    background-color: rgb(81, 170, 170);
+    color: #ffffff;
+  }
 }
 button {
   background-color: yellow;
   margin: 15px 0px 0px 100px;
   border-radius: 5px;
+  &:hover {
+    background-color: silver;
+    color: white;
+  }
 }
 h1 {
   color: white;
@@ -74,8 +88,6 @@ h5 {
     color: orangered;
   } */
 
-.about img {
-}
 span {
   color: white;
 }
@@ -116,6 +128,7 @@ h2 {
 .services {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .service {
   background-color: #062258;
@@ -124,6 +137,11 @@ h2 {
   padding: 0cm;
   width: 30%;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(95, 185, 181, 0.4);
+  }
 }
 .service-icon {
   font-size: 2em;
@@ -167,8 +185,9 @@ p {
   height: 150px;
   margin-right: 20px;
 }
-.resume-header h1 {
-  margin: 0;
+
+.h1-here {
+  padding: 0px 100px 0 0;
 }
 .experience,
 .skills,
@@ -178,6 +197,13 @@ p {
 h2 {
   color: #f0db4f;
   margin-bottom: 10px;
+}
+.experience-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(29, 16, 32, 0.4);
+  }
 }
 .experience-item,
 .skills-item,
@@ -223,6 +249,9 @@ h2 {
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    background-color: darkgoldenrod;
+  }
 }
 .projects {
   display: flex;
@@ -236,6 +265,11 @@ h2 {
   border-radius: 5px;
   width: 200px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(229, 222, 231, 0.4);
+  }
 }
 .project-item img {
   width: 100%;
@@ -254,6 +288,10 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    background-color: darkgoldenrod;
+    color: #ffffff;
+  }
 }
 .skills-item .span {
   color: rgb(221, 221, 24);
@@ -322,6 +360,9 @@ h2 {
   border: none;
   padding: 10px 15px;
   border: 1px solid;
+  &:hover {
+    background-color: darkgoldenrod;
+  }
 }
 .lgs {
   color: white;
@@ -331,18 +372,60 @@ h2 {
   padding: 40px 10px;
   font-size: 28px;
 }
+
+.google {
+  &:hover {
+    color: rgb(49, 204, 204);
+  }
+  cursor: pointer;
+}
 .fa-brands {
   color: silver;
   background-color: #21304e;
+  &:hover {
+    color: rgb(49, 204, 204);
+  }
 }
-.news-section{
+.slack {
+  &:hover {
+    color: rgb(49, 204, 204);
+  }
+  cursor: pointer;
+}
+.amazon {
+  &:hover {
+    color: rgb(49, 204, 204);
+  }
+  cursor: pointer;
+}
+.spotify {
+  &:hover {
+    color: rgb(49, 204, 204);
+  }
+  cursor: pointer;
+}
+.linkedin {
+  &:hover {
+    color: rgb(49, 204, 204);
+  }
+  cursor: pointer;
+}
+.Walmart {
+  &:hover {
+    color: rgb(49, 204, 204);
+  }
+  cursor: pointer;
+}
+.news-section {
   .news-last {
     color: #ffffff;
-    padding: 40px 0px 0px 550px;
+    padding: 0px;
+    text-align: center;
   }
-  
+
   .news-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     margin-top: 50px;
@@ -353,23 +436,28 @@ h2 {
     overflow: hidden;
     width: 300px;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+      transform: scale(1.053);
+      box-shadow: 0px 4px 15px rgba(131, 224, 122, 0.4);
+    }
   }
-  
+
   .news-card img {
     width: 100%;
     height: auto;
   }
-  
+
   .news-card .content {
     padding: 15px;
   }
-  
+
   .news-card .category {
     font-size: 12px;
     color: #aaa;
     margin-bottom: 5px;
   }
-  
+
   .news-card .title {
     color: #ffffff;
     font-size: 16px;
@@ -379,7 +467,6 @@ h2 {
     font-size: 12px;
     color: #888;
   }
-  
 }
 
 .downloads-container {
@@ -391,7 +478,6 @@ h2 {
   background-position: center;
   object-fit: contain;
   opacity: 0.4;
-  
 }
 
 .downloads-container-text {
@@ -403,7 +489,6 @@ h2 {
   gap: 4rem;
   margin-bottom: 100px;
   bottom: 200px;
-
 }
 
 .downloads-container-text h3 {
@@ -415,7 +500,6 @@ h2 {
 
 .question {
   color: white;
-
 }
 .Download-button {
   background-color: #ef8633;
@@ -426,7 +510,7 @@ h2 {
   text-align: center;
 }
 .footer {
-  background-color:#051026;
+  background-color: #051026;
   padding: 50px 20px;
   .footer-container {
     display: flex;
@@ -436,101 +520,105 @@ h2 {
     margin: 0 auto;
     font-size: 10px;
   }
-  
+
   .footer-left {
     flex: 1;
     margin-right: 20px;
   }
-  .footer-left h2{
+  .footer-left h2 {
     color: #ffff;
   }
-  
-  
+
   .footer-left p {
     color: #bbb;
     font-size: 14px;
   }
-  
+
   .social-icons {
     margin-top: 20px;
     color: #4a6b1d;
   }
-  .fa-twitter:before{
+  .fa-twitter:before {
     background-color: #051026;
     color: yellow;
   }
-  .fa-facebook::before{
-  background-color: #051026;
-  }
-  .fa-instagram:before{
+  .fa-facebook::before {
     background-color: #051026;
   }
-  .fa-youtube:before{
+  .fa-instagram:before {
     background-color: #051026;
   }
-  
+  .fa-youtube:before {
+    background-color: #051026;
+  }
+
   .social-icons a {
     color: #bbb;
     margin-right: 10px;
     font-size: 20px;
   }
-  .footer-center{
+  .footer-center {
     margin-left: 100px;
   }
-  .footer-center, .footer-right {
+  .footer-center,
+  .footer-right {
     flex: 1;
     margin-right: 20px;
   }
-  
-  .footer-center h3, .footer-right h3 {
+
+  .footer-center h3,
+  .footer-right h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #fff;
   }
-  
-  .footer-center ul, .footer-right ul {
+
+  .footer-center ul,
+  .footer-right ul {
     list-style: none;
     padding: 0;
   }
-  
-  .footer-center ul li, .footer-right ul li {
+
+  .footer-center ul li,
+  .footer-right ul li {
     margin-bottom: 10px;
   }
-  
-  .footer-center ul li a, .footer-right ul li a {
+
+  .footer-center ul li a,
+  .footer-right ul li a {
     color: #bbb;
     text-decoration: none;
   }
-  
+
   .footer-info {
     flex: 1;
   }
-  
+
   .footer-info h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #fff;
   }
-  
+
   .footer-info p {
     color: #bbb;
     margin-bottom: 10px;
   }
-  
+
   .newsletter {
     display: flex;
     align-items: center;
   }
-  
+
   .newsletter input[type="email"] {
     padding: 10px;
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    color:rgb(71, 71, 71);
-    background-color:rgb(46, 44, 44);
+    color: rgb(71, 71, 71);
+    background-color: rgb(46, 44, 44);
   }
-  
+
   .newsletter button {
     padding: 10px 20px;
     background-color: #c0d92b;
@@ -540,20 +628,307 @@ h2 {
     cursor: pointer;
     margin: -10px;
   }
-  
+
   .footer-bottom {
     text-align: center;
     margin-top: 40px;
     border-top: 1px solid #333;
     padding-top: 20px;
     color: #bbb;
-    
   }
-  
+
   .footer-bottom a {
     color: #c0d92b;
     text-decoration: none;
   }
-  
+}
+/* respnsiveness here */
+
+@media (min-width: 360px) and (max-width: 767px) {
+  /* header section here */
+  .navbar h1 {
+    color: #051026;
+    padding: 0px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .header-btn {
+    display: none;
+  }
+  /* about section here */
+
+  .about-img {
+    display: none;
+  }
+  .H1-here {
+    font-size: 15px;
+  }
+  /* social media section hear */
+  .social-media {
+    font-size: 10px;
+    display: flex;
+    margin: 70px 0 0 100px;
+    display: none;
+  }
+
+  /* container section here */
+  .container h1 {
+    font-size: 21px;
+  }
+  .container p {
+    font-size: 15px;
+  }
+  .service {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  /* resume section here */
+  .h1-here {
+    font-size: 23px;
+    text-align: start;
+  }
+  .p-here {
+    font-size: 15px;
+    text-align: start;
+  }
+  .experience h2 {
+    font-size: 20px;
+  }
+  .experience-item h3 {
+    font-size: 12px;
+  }
+  .skills h2 {
+    font-size: 20px;
+  }
+  .skills-item {
+    font-size: 8px;
+  }
+  .tools h2 {
+    font-size: 20px;
+  }
+  .tools-item {
+    font-size: 11px;
+  }
+  /* container class here */
+  .projects-header h1 {
+    font-size: 10px;
+  }
+  .projects-header p {
+    font-size: 13px;
+  }
+  .filter-buttons {
+    font-size: 3px;
+  }
+  .projects {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .project-item {
+    width: 300px;
+  }
+  /* container new here */
+  .container-new h2 {
+    font-size: 19px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .container-new h3 {
+    font-size: 18px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .new-content {
+    width: 100%;
+    justify-content: center;
+  }
+  .paragraph {
+    padding: 0px;
+    text-align: center;
+  }
+  .lgs {
+    font-size: 18px;
+  }
+  /* news section here */
+  .news-container {
+    align-content: center;
+    justify-content: center;
+  }
+  .news-section {
+    .news-last {
+      color: #ffffff;
+      padding: 0px;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+  .news-section {
+    .news-container {
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+    }
+  }
+  /* download section here */
+  .downloads-container {
+    background-color: #19253d;
+    display: flex;
+    height: 240px;
+    margin-top: 100px;
+    background-image: url(../images/computer-science-student-explaining-his-creative-idea-friends-when-they-are-working-group-project_274689-27077.avif);
+    background-position: center;
+    object-fit: contain;
+    opacity: 0.4;
+  }
+  .downloads-container-text h3 {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .Download-button {
+    margin-right: 20px;
+  }
+  .prg {
+    font-size: 10px;
+  }
+  /* footer section here */
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* header here */
+  .navbar h1 {
+    color: #051026;
+    padding: 0px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .header-btn {
+    display: none;
+  }
+  /* about section here */
+  .about-img {
+    width: 300px;
+  }
+  .H1-here {
+    font-size: 18px;
+  }
+  /* social media section hear */
+  .social-media {
+    font-size: 22px;
+  }
+  /* container section  here */
+  .container h1 {
+    font-size: 23px;
+  }
+  /* resume section here */
+  .h1-here {
+    font-size: 23px;
+    text-align: start;
+  }
+  .p-here {
+    font-size: 15px;
+    text-align: start;
+  }
+  .experience h2 {
+    font-size: 22px;
+  }
+  .skills h2 {
+    font-size: 22px;
+  }
+  .tools h2 {
+    font-size: 22px;
+  }
+  /* container class here */
+  .projects-header h1 {
+    font-size: 23px;
+  }
+  .projects-header p {
+    font-size: 15px;
+  }
+  .filter-buttons {
+    font-size: 5px;
+  }
+  .projects {
+    padding: 100px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .project-item {
+    width: 180px;
+  }
+  /* container new here */
+  .container-new h2 {
+    font-size: 21px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .container-new h3 {
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .new-content {
+    width: 100%;
+    justify-content: center;
+  }
+  .paragraph {
+    padding: 0px;
+    text-align: center;
+  }
+  .lgs {
+    font-size: 23px;
+  }
+  /* news section here */
+  .news-container {
+    align-content: center;
+    justify-content: center;
+  }
+  .news-section {
+    .news-last {
+      color: #ffffff;
+      padding: 70pxpx;
+      text-align: center;
+      font-size: 28px;
+    }
+  }
+  .news-section {
+    .news-container {
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+    }
+  }
+  /* download section here */
+  .downloads-container {
+    background-color: #19253d;
+    display: flex;
+    height: 240px;
+    /* margin-top: 100px; */
+    background-image: url(../images/computer-science-student-explaining-his-creative-idea-friends-when-they-are-working-group-project_274689-27077.avif);
+    background-position: center;
+    object-fit: contain;
+    opacity: 0.4;
+  }
+  .downloads-container-text h3 {
+    font-size: 25px;
+  }
+  .prg {
+    font-size: 15px;
+  }
+  .Download-button {
+    font-size: 12px;
+  }
+}
