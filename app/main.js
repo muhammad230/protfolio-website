@@ -20,8 +20,29 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    
+    // Filter Projects
+    const filterButtons = document.querySelectorAll(".filter-buttons button");
+    const projectItems = document.querySelectorAll(".project-item");
 
-   
-   
-   
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                const category = this.textContent.toLowerCase();
+                projectItems.forEach(item => {
+                    if (category === "all" || item.innerHTML.toLowerCase().includes(category)) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    }
+
+    // Update Footer Year
+    const footerYear = document.querySelector(".footer-bottom p");
+    if (footerYear) {
+        footerYear.innerHTML = `Copyright &copy; ${new Date().getFullYear()} – All Rights Reserved. Made by <a href="#">fallow</a>`;
+    }
 });
